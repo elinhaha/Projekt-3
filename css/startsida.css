@@ -1,0 +1,17 @@
+body {
+  display: grid;
+  margin: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 10;
+}
+
+header {
+  grid-column: 1/5;
+  text-align: center;
+  grid-row: 3;
+}
+
+h1 {
+  color: aquamarine;
+  justify-content: center;
+}
