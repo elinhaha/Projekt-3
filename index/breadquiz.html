@@ -4,7 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projekt 3</title>
-    <script defer src="breadquiz.js"></script>
+    <script src="/js/quiz.js" defer></script>
+    <link rel="stylesheet" href="/css/stylequiz" />
   </head>
-  <body></body>
+  <body>
+    <form class="questions">
+      <div class="question">
+        <p>Let's start with something easy... What kind of bread is this?</p>
+        <label>
+          <input name="question1" type="radio" value="0" checked /> Potato Bread
+        </label>
+        <label
+          ><input name="question1" type="radio" value="0" /> Garlic Bread
+        </label>
+        <label
+          ><input name="question1" type="radio" value="0" /> Brioche
+        </label>
+        <label
+          ><input name="question1" type="radio" value="1" /> Pita Bread
+        </label>
+      </div>
+      <div class="question">
+        <p>What is a thin, almost sticklike loaf of French bread called?</p>
+        <label>
+          <input name="question2" type="radio" value="0" checked /> Focaccia
+        </label>
+        <label
+          ><input name="question2" type="radio" value="1" /> Baguette</label
+        >
+        <label
+          ><input name="question2" type="radio" value="0" /> Rye Bread
+        </label>
+        <label
+          ><input name="question2" type="radio" value="0" /> Sourdough
+        </label>
+      </div>
+      <div class="question">
+        <p>
+          What is the thin bread used to wrap the Chinese dish moo shu called?
+        </p>
+        <label>
+          <input name="question3" type="radio" value="1" checked /> Bing
+        </label>
+        <label
+          ><input name="question3" type="radio" value="0" /> Biscotti</label
+        >
+        <label><input name="question3" type="radio" value="0" /> Bialy </label>
+        <label><input name="question3" type="radio" value="0" /> Anpan </label>
+      </div>
+      <div class="question">
+        <p>Who invented sliced bread?</p>
+        <label>
+          <input name="question4" type="radio" value="0" checked /> Giada De
+          Laurentiis
+        </label>
+        <label
+          ><input name="question4" type="radio" value="0" /> Guy Fieri
+        </label>
+        <label
+          ><input name="question4" type="radio" value="0" /> Thomas Keller
+        </label>
+        <label
+          ><input name="question4" type="radio" value="1" /> Otto Rohwedder
+        </label>
+      </div>
+      <div class="question">
+        <p>
+          What is the name of the traditional Welsh tea bread which is enriched
+          with dried fruit and falvoured with tea?
+        </p>
+        <label>
+          <input name="question5" type="radio" value="0" checked /> Ciabatta
+        </label>
+        <label
+          ><input name="question5" type="radio" value="1" /> Bara Brith</label
+        >
+        <label><input name="question5" type="radio" value="0" /> Farl </label>
+        <label
+          ><input name="question5" type="radio" value="0" /> Lye roll
+        </label>
+      </div>
+      <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+    </form>
+    <div class="result invisible">
+      <h2>You scored <span class="correct-answers">0</span> points</h2>
+      <button type="button" onclick="resetQuiz()">Play again</button>
+    </div>
+  </body>
 </html>
