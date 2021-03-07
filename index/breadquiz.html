@@ -3,92 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projekt 3</title>
     <script src="/js/quiz.js" defer></script>
-    <link rel="stylesheet" href="/css/stylequiz" />
+    <title>Projekt 3</title>
+    <link rel="stylesheet" href="/css/stylequiz.css" />
   </head>
   <body>
     <form class="questions">
       <div class="question">
-        <p>Let's start with something easy... What kind of bread is this?</p>
-        <label>
-          <input name="question1" type="radio" value="0" checked /> Potato Bread
-        </label>
-        <label
-          ><input name="question1" type="radio" value="0" /> Garlic Bread
-        </label>
-        <label
-          ><input name="question1" type="radio" value="0" /> Brioche
-        </label>
-        <label
-          ><input name="question1" type="radio" value="1" /> Pita Bread
-        </label>
-      </div>
-      <div class="question">
-        <p>What is a thin, almost sticklike loaf of French bread called?</p>
-        <label>
-          <input name="question2" type="radio" value="0" checked /> Focaccia
-        </label>
-        <label
-          ><input name="question2" type="radio" value="1" /> Baguette</label
-        >
-        <label
-          ><input name="question2" type="radio" value="0" /> Rye Bread
-        </label>
-        <label
-          ><input name="question2" type="radio" value="0" /> Sourdough
-        </label>
-      </div>
-      <div class="question">
         <p>
-          What is the thin bread used to wrap the Chinese dish moo shu called?
+          What is the name of the traditional Welsh teabread which is enriched
+          with dried fruit and flavoured with tea?
         </p>
+        <img src="/images/barabrith.jpg" alt="Picture of Bread" />
         <label>
-          <input name="question3" type="radio" value="1" checked /> Bing
+          <input name="question1" type="radio" value="0" checked /> Sourdough
         </label>
-        <label
-          ><input name="question3" type="radio" value="0" /> Biscotti</label
+        <label>
+          <input name="question1" type="radio" value="0" />Ciabatta
+        </label>
+        <label>
+          <input name="question1" type="radio" value="0" /> Rye Bread</label
         >
-        <label><input name="question3" type="radio" value="0" /> Bialy </label>
-        <label><input name="question3" type="radio" value="0" /> Anpan </label>
+        <label>
+          <input name="question1" type="radio" value="1" />Bara Brith
+        </label>
+      </div>
+      <div class="question">
+        <p>What is this bread called?</p>
+        <img src="/images/baguette.jpg" />
+        <label>
+          <input name="question2" type="radio" value="1" checked /> Baguette
+        </label>
+        <label>
+          <input name="question2" type="radio" value="0" /> Pita Bread
+        </label>
+        <label>
+          <input name="question2" type="radio" value="0" /> Focaccia
+        </label>
+        <label>
+          <input name="question2" type="radio" value="0" /> Multigrain
+        </label>
       </div>
       <div class="question">
         <p>Who invented sliced bread?</p>
+        <img src="/images/slicedbread.jpg" />
+
         <label>
-          <input name="question4" type="radio" value="0" checked /> Giada De
+          <input name="question3" type="radio" value="0" checked /> Giada De
           Laurentiis
         </label>
-        <label
-          ><input name="question4" type="radio" value="0" /> Guy Fieri
+        <label>
+          <input name="question3" type="radio" value="0" /> Guy Fieri
         </label>
-        <label
-          ><input name="question4" type="radio" value="0" /> Thomas Keller
+        <label>
+          <input name="question3" type="radio" value="1" /> Otto Rohwedder
         </label>
-        <label
-          ><input name="question4" type="radio" value="1" /> Otto Rohwedder
+        <label>
+          <input name="question3" type="radio" value="0" /> Thomas Keller
         </label>
       </div>
       <div class="question">
-        <p>
-          What is the name of the traditional Welsh tea bread which is enriched
-          with dried fruit and falvoured with tea?
-        </p>
+        <p>What ring-shaped, individual bread is first bioled, then baked?</p>
+        <img src="/images/bagel.jpg" />
+
         <label>
-          <input name="question5" type="radio" value="0" checked /> Ciabatta
+          <input name="question4" type="radio" value="0" checked />Pumpkin bread
         </label>
-        <label
-          ><input name="question5" type="radio" value="1" /> Bara Brith</label
-        >
-        <label><input name="question5" type="radio" value="0" /> Farl </label>
-        <label
-          ><input name="question5" type="radio" value="0" /> Lye roll
+        <label>
+          <input name="question4" type="radio" value="0" />Potato bread
         </label>
+        <label>
+          <input name="question4" type="radio" value="0" />Panettone
+        </label>
+        <label> <input name="question4" type="radio" value="1" />Bagel </label>
       </div>
-      <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+      <div class="question">
+        <p>What is this bread called?</p>
+        <img src="/images/pitabread.jpg" />
+
+        <label>
+          <input name="question4" type="radio" value="0" checked />Lye Roll
+        </label>
+        <label>
+          <input name="question4" type="radio" value="1" />Pitabread
+        </label>
+        <label>
+          <input name="question4" type="radio" value="0" />Tortilla
+        </label>
+        <label> <input name="question4" type="radio" value="0" />Scone </label>
+      </div>
+      <button type="button" onclick="submitQuiz()">Rätta!</button>
     </form>
     <div class="result invisible">
-      <h2>You scored <span class="correct-answers">0</span> points</h2>
-      <button type="button" onclick="resetQuiz()">Play again</button>
+      <h2>Du fick <span class="correct-answers">0</span> rätta svar</h2>
+      <button type="button" onclick="resetQuiz()">Försök igen</button>
     </div>
   </body>
 </html>
