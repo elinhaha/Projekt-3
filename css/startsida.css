@@ -22,7 +22,7 @@ h1 {
   grid-row: 4/6;
   justify-content: center;
   margin: 20px;
-  background-color: white;
+  background-color: aquamarine;
   justify-content: space-evenly;
 }
 
@@ -30,14 +30,14 @@ h1 {
   grid-column: 2/3;
   grid-row: 4/6;
   margin: 20px;
-  background-color: white;
+  background-color: aquamarine;
   justify-content: space-evenly;
 }
 .text3 {
   grid-column: 3/4;
   grid-row: 4/6;
   margin: 20px;
-  background-color: white;
+  background-color: aquamarine;
   justify-content: space-evenly;
 }
 
@@ -45,21 +45,21 @@ h1 {
   grid-column: 1/2;
   grid-row: 6/8;
   margin: 20px;
-  background-color: white;
+  background-color: aquamarine;
 }
 
 .text5 {
   grid-column: 2/3;
   grid-row: 6/8;
   margin: 20px;
-  background-color: white;
+  background-color: aquamarine;
 }
 
 .text6 {
   grid-column: 3/4;
   grid-row: 6/8;
   margin: 20px;
-  background-color: white;
+  background-color: aquamarine;
 }
 h3 {
   justify-content: center;
