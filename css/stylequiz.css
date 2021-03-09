@@ -7,6 +7,9 @@ label {
 
 button {
   margin-top: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .question {
