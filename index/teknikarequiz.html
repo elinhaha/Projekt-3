@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <script src="/js/quiz.js" defer></script>
     <title>Projekt 3</title>
     <link rel="stylesheet" href="/css/stylequiz.css" />
@@ -66,11 +70,11 @@
           <input name="question4" type="radio" value="1" />Hardware
         </label>
       </div>
-      <button type="button" onclick="submitQuiz()">Rätta!</button>
+      <button type="button" onclick="submitQuiz()">Submit!</button>
     </form>
     <div class="result invisible">
-      <h2>Du fick <span class="correct-answers">0</span> rätta svar</h2>
-      <button type="button" onclick="resetQuiz()">Försök igen</button>
+      <h2>You scored <span class="correct-answers">0</span> points</h2>
+      <button type="button" onclick="resetQuiz()">Play again</button>
     </div>
     <nav>
       <button class="button">

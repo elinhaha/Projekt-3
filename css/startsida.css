@@ -4,6 +4,7 @@ body {
 
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 10;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -20,10 +21,11 @@ h1 {
 .text1 {
   grid-column: 1/2;
   grid-row: 4/6;
-  justify-content: center;
+
   margin: 20px;
   background-color: aquamarine;
-  justify-content: space-evenly;
+  border-style: solid;
+  border-color: black;
 }
 
 .text2 {
@@ -31,14 +33,16 @@ h1 {
   grid-row: 4/6;
   margin: 20px;
   background-color: aquamarine;
-  justify-content: space-evenly;
+  border-style: solid;
+  border-color: black;
 }
 .text3 {
   grid-column: 3/4;
   grid-row: 4/6;
   margin: 20px;
   background-color: aquamarine;
-  justify-content: space-evenly;
+  border-style: solid;
+  border-color: black;
 }
 
 .text4 {
@@ -46,6 +50,8 @@ h1 {
   grid-row: 6/8;
   margin: 20px;
   background-color: aquamarine;
+  border-style: solid;
+  border-color: black;
 }
 
 .text5 {
@@ -53,6 +59,8 @@ h1 {
   grid-row: 6/8;
   margin: 20px;
   background-color: aquamarine;
+  border-style: solid;
+  border-color: black;
 }
 
 .text6 {
@@ -60,19 +68,38 @@ h1 {
   grid-row: 6/8;
   margin: 20px;
   background-color: aquamarine;
+  border-style: solid;
+  border-color: black;
 }
 h3 {
+  display: flex;
   justify-content: center;
 }
 
 .button1 {
   background-color: white;
-  display: inline-block;
+  display: grid;
   color: aquamarine;
   cursor: pointer;
   text-decoration: none;
-  justify-content: center;
+
+  margin-top: 1.5rem;
+  font-size: 15px;
+  grid-column: 2/2;
+  grid-row: 4/6;
 }
 .button1:hover {
   background-color: aquamarine;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  border: black;
+  border-style: solid;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
 }

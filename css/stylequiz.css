@@ -19,3 +19,12 @@ button {
 .invisible {
   display: none;
 }
+
+body {
+  background-color: blueviolet;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  color: aquamarine;
+}
