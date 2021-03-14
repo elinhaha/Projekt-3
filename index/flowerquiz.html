@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <script src="/js/quiz.js" defer></script>
     <title>Projekt 3</title>
     <link rel="stylesheet" href="/css/stylequiz.css" />
@@ -11,7 +15,7 @@
     <form class="questions">
       <div class="question">
         <p>What is this flower called?</p>
-        <img src="/images/tulip.jpg" />
+        <img src="/images/tulip.jpg" alt="Picture of a tulip" height="250px" />
         <label>
           <input name="question1" type="radio" value="0" checked />Rose
         </label>
@@ -21,7 +25,11 @@
       </div>
       <div class="question">
         <p>What is this flower called?</p>
-        <img src="/images/poppy.jpg" />
+        <img
+          src="/images/poppy.jpg"
+          alt="Picture of a poppy flower"
+          height="250px"
+        />
         <label>
           <input name="question2" type="radio" value="1" checked />Poppy
         </label>
@@ -37,7 +45,11 @@
       </div>
       <div class="question">
         <p>What is this flower called?</p>
-        <img src="/images/sunflower.jpg" />
+        <img
+          src="/images/sunflower.jpg"
+          alt="Picture of a sunflower"
+          height="250px"
+        />
         <label>
           <input name="question3" type="radio" value="1" checked />Sunflower
         </label>
@@ -49,7 +61,11 @@
       </div>
       <div class="question">
         <p>What is this flower called?</p>
-        <img src="/images/daisy.jpg" />
+        <img
+          src="/images/daisy.jpg"
+          alt="Picture of a daisy flower"
+          height="250px"
+        />
         <label>
           <input name="question4" type="radio" value="0" checked />Lily
         </label>
@@ -57,11 +73,11 @@
         <label> <input name="question4" type="radio" value="1" />Daisy </label>
         <label> <input name="question4" type="radio" value="0" />Sofia </label>
       </div>
-      <button type="button" onclick="submitQuiz()">Rätta!</button>
+      <button type="button" onclick="submitQuiz()">Submit!</button>
     </form>
     <div class="result invisible">
-      <h2>Du fick <span class="correct-answers">0</span> rätta svar</h2>
-      <button type="button" onclick="resetQuiz()">Försök igen</button>
+      <h2>You scored <span class="correct-answers">0</span> points</h2>
+      <button type="button" onclick="resetQuiz()">Play again</button>
     </div>
     <nav>
       <button class="button">

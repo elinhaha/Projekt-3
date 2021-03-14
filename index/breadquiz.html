@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <script src="/js/quiz.js" defer></script>
     <title>Projekt 3</title>
     <link rel="stylesheet" href="/css/stylequiz.css" />
@@ -14,7 +18,11 @@
           What is the name of the traditional Welsh teabread which is enriched
           with dried fruit and flavoured with tea?
         </p>
-        <img src="/images/barabrith.jpg" alt="Picture of Bread" />
+        <img
+          src="/images/barabrith.jpg"
+          alt="Picture of Bread"
+          height="250px"
+        />
         <label>
           <input name="question1" type="radio" value="0" checked /> Sourdough
         </label>
@@ -30,7 +38,11 @@
       </div>
       <div class="question">
         <p>What is this bread called?</p>
-        <img src="/images/baguette.jpg" />
+        <img
+          src="/images/baguette.jpg"
+          alt="Picture of a baguette"
+          height="250px"
+        />
         <label>
           <input name="question2" type="radio" value="1" checked /> Baguette
         </label>
@@ -46,7 +58,11 @@
       </div>
       <div class="question">
         <p>Who invented sliced bread?</p>
-        <img src="/images/slicedbread.jpg" />
+        <img
+          src="/images/slicedbread.jpg"
+          alt="Picture of sliced bread"
+          height="250px"
+        />
 
         <label>
           <input name="question3" type="radio" value="0" checked /> Giada De
@@ -63,8 +79,8 @@
         </label>
       </div>
       <div class="question">
-        <p>What ring-shaped, individual bread is first bioled, then baked?</p>
-        <img src="/images/bagel.jpg" />
+        <p>What ring-shaped, individual bread is first boiled, then baked?</p>
+        <img src="/images/bagel.jpg" alt="Picture of a bagel" height="250px" />
 
         <label>
           <input name="question4" type="radio" value="0" checked />Pumpkin bread
@@ -79,7 +95,11 @@
       </div>
       <div class="question">
         <p>What is this bread called?</p>
-        <img src="/images/pitabread.jpg" />
+        <img
+          src="/images/pitabread.jpg"
+          alt="Picture of pitabread"
+          height="250px"
+        />
 
         <label>
           <input name="question4" type="radio" value="0" checked />Lye Roll
@@ -92,11 +112,11 @@
         </label>
         <label> <input name="question4" type="radio" value="0" />Scone </label>
       </div>
-      <button type="button" onclick="submitQuiz()">Rätta!</button>
+      <button type="button" onclick="submitQuiz()">Submit!</button>
     </form>
     <div class="result invisible">
-      <h2>Du fick <span class="correct-answers">0</span> rätta svar</h2>
-      <button type="button" onclick="resetQuiz()">Försök igen</button>
+      <h2>You scored <span class="correct-answers">0</span> points</h2>
+      <button type="button" onclick="resetQuiz()">Play again</button>
     </div>
     <nav>
       <button class="button">

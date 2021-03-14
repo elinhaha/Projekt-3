@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <script src="/js/quiz.js" defer></script>
     <title>Projekt 3</title>
     <link rel="stylesheet" href="/css/stylequiz.css" />
@@ -11,7 +15,7 @@
     <form class="questions">
       <div class="question">
         <p>Name this city!</p>
-        <img src="/images/paris.jpg" />
+        <img src="/images/paris.jpg" alt="Picture of Paris" height="250px" />
         <label>
           <input name="question1" type="radio" value="0" checked />Moskva
         </label>
@@ -25,7 +29,7 @@
       </div>
       <div class="question">
         <p>Name this city!</p>
-        <img src="/images/madrid.jpg" />
+        <img src="/images/madrid.jpg" alt="Picture of Madrid" height="250px" />
         <label>
           <input name="question2" type="radio" value="0" checked />London
         </label>
@@ -35,7 +39,7 @@
       </div>
       <div class="question">
         <p>Name this city!</p>
-        <img src="/images/london.jpg" />
+        <img src="/images/london.jpg" alt="Picture of London" height="250px" />
         <label>
           <input name="question3" type="radio" value="0" checked />Oslo
         </label>
@@ -45,7 +49,7 @@
       </div>
       <div class="question">
         <p>Name this city!</p>
-        <img src="/images/tokyo.jpg" />
+        <img src="/images/tokyo.jpg" alt="Picture of Tokyo" height="250px" />
         <label>
           <input name="question4" type="radio" value="0" checked />Wien
         </label>
@@ -57,7 +61,7 @@
       </div>
       <div class="question">
         <p>Name this city!</p>
-        <img src="/images/rome.jpg" />
+        <img src="/images/rome.jpg" alt="Picture of Rome" height="250px" />
 
         <label>
           <input name="question5" type="radio" value="1" checked />Rome
@@ -70,11 +74,11 @@
           <input name="question5" type="radio" value="0" />Bratislava
         </label>
       </div>
-      <button type="button" onclick="submitQuiz()">Rätta!</button>
+      <button type="button" onclick="submitQuiz()">Submit!</button>
     </form>
     <div class="result invisible">
-      <h2>Du fick <span class="correct-answers">0</span> rätta svar</h2>
-      <button type="button" onclick="resetQuiz()">Försök igen</button>
+      <h2>You scored <span class="correct-answers">0</span> points</h2>
+      <button type="button" onclick="resetQuiz()">Play again</button>
     </div>
     <nav>
       <button class="button">
