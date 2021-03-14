@@ -76,30 +76,24 @@ h3 {
   justify-content: center;
 }
 
-.button1 {
-  background-color: white;
-  display: grid;
-  color: aquamarine;
-  cursor: pointer;
-  text-decoration: none;
-
-  margin-top: 1.5rem;
-  font-size: 15px;
-  grid-column: 2/2;
-  grid-row: 4/6;
-}
-.button1:hover {
-  background-color: aquamarine;
+.button:hover {
+  background-color: lightgray;
 }
 
 button {
-  display: flex;
-  justify-content: center;
   border: black;
   border-style: solid;
+  text-decoration: none;
+  margin: 0.5rem;
 }
 
 nav {
   display: flex;
   justify-content: space-evenly;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
 }
